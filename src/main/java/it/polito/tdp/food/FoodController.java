@@ -59,6 +59,8 @@ public class FoodController {
 			List<Food> cibi = model.getFoods(portions);
 			boxFood.getItems().clear();
 			boxFood.getItems().addAll(cibi) ;
+			txtResult.setText("Grafo creato!\nNumero vertici: " + model.getNumeroVertici());
+    		txtResult.appendText("\nNumero archi: " + model.getNumeroArchi() + "\n");
 			
 		} catch (NumberFormatException ex) {
 			txtResult.appendText("ERRORE: Devi inserire un numero\n");

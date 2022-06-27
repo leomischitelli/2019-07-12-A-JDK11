@@ -70,5 +70,13 @@ public class Model {
 		
 		return result ;
 	}
+	
+	public int getNumeroVertici() {
+		return this.graph.vertexSet().size();
+	}
+	
+	public int getNumeroArchi() {
+		return this.graph.edgeSet().size();
+	}
 
 }
